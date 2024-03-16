@@ -820,8 +820,16 @@ footer {
     font-size: 12px;
   }
 
+  college-logo-div{
+    width: 15%;
+  }
+
+  nav ul{
+    width: 80%;
+  }
+
   .college-name {
-    font-size: 10px;
+    font-size: 6px;
   }
 
   .metora-heading-page h1 {
@@ -896,3 +904,11 @@ footer {
     padding: 10px;
   }
 }
+
+
+@media screen and (max-width: 410px) {
+  .college-name {
+    display: none;
+  }
+}
+
