@@ -1,0 +1,867 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: rgb(255, 255, 255);
+
+  overflow-y: scroll;
+  overflow-x: hidden;
+
+  transition: 0.5s ease-in-out;
+  scroll-behavior: smooth;
+}
+
+body::-webkit-scrollbar {
+  width: 10px;
+}
+body::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: rgb(0, 183, 255);
+  border-radius: 6px;
+}
+
+/* Nav bar  */
+
+nav {
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 70px;
+  flex-direction: row;
+  overflow: hidden;
+  z-index: 3;
+  box-shadow: 2px 2px 54px 4px black;
+
+  font-family: "Quicksand", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+
+  background-image: url(/assets/nav.png);
+
+  background-size: contain;
+  background-position: center;
+}
+
+.college-logo-div {
+  width: 20%;
+  overflow: hidden;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 10px;
+  z-index: 2;
+  color: white;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.college-logo {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-left: 10px;
+}
+
+.college-name {
+  font-family: "Quicksand", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+}
+
+nav ul {
+  width: 60%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: row;
+  z-index: 2;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+nav ul li {
+  list-style: none;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+
+  transition: 0.5s ease-in-out;
+  scroll-behavior: smooth;
+}
+
+/* heading page */
+
+.metora-heading-page {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.metora-heading-page h1 {
+  font-size: 20rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin: 0;
+  color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  padding: 10px;
+
+  background-image: url("https://media.giphy.com/media/FOQhwCWXP7UBi/giphy.gif");
+
+  /* background-image: url(./assets/insect.jpg); */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-clip: text;
+
+  font-family: "Poppins", sans-serif;
+  font-weight: 900;
+}
+
+/* welcome page */
+
+.welcome-page {
+  width: 80%;
+  height: 100svh;
+  margin: 0 auto;
+  background-image: url(./assets/banner.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  flex-direction: column;
+  /* animation: fade-Animation linear;
+  animation-timeline: view(-100px);
+  animation-range-start: contain;
+  animation-range-end: contain; */
+}
+
+@keyframes fade-Animation {
+  from {
+    scale: 0.7;
+    opactiy: 0;
+  }
+  to {
+    scale: 1;
+    opacity: 1;
+  }
+}
+
+.metora-tagline {
+  font-family: "Rye", serif;
+  font-weight: 400;
+  text-shadow: 7px 7px 0px rgb(102, 123, 115);
+  font-style: normal;
+  font-size: 100px;
+  color: rgb(232, 224, 159);
+  transition: 0.5s;
+  animation: taglineAnimation 2s linear infinite;
+}
+
+@keyframes taglineAnimation {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(5px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.metora-dates {
+  font-family: "Poppins", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  color: rgb(232, 224, 159);
+  animation: taglineAnimation 2s linear infinite;
+  font-size: 30px;
+}
+
+/* meteora des page */
+
+.metora-desc {
+  width: 80%;
+  height: 50vh;
+  margin: 2em auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(9, 44, 68);
+
+  padding: 10px;
+}
+
+.metora-desc-p {
+  overflow: hidden;
+  width: 80%;
+  font-family: "Poppins", sans-serif;
+  color: rgb(232, 224, 159);
+  font-optical-sizing: auto;
+  font-size: 1.7em;
+  font-style: normal;
+  text-align: center;
+}
+
+/* general rules */
+
+.general-rules {
+  width: 80%;
+  margin: 2em auto;
+  align-items: center;
+}
+
+.general-rules header {
+  width: 100%;
+  text-align: center;
+  font-family: "Rye", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 70px;
+  color: rgb(102, 33, 14);
+}
+
+.general-rules ol {
+  width: 100%;
+}
+
+.general-rules ol li {
+  margin-top: 20px;
+  font-family: "Quicksand", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 22px;
+}
+
+.general-rules-text ol li a {
+  color: rgb(102, 33, 14);
+}
+
+/* events section */
+
+.events-section {
+  width: 80%;
+  height: 500px;
+  margin: 2em auto;
+  margin-top: 100px;
+  overflow: hidden;
+  position: relative;
+
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+
+  align-items: start;
+  justify-content: space-evenly;
+}
+
+.event {
+  width: 300px;
+  height: 70px;
+  padding-top: 20px;
+  border: 2px solid white;
+  overflow: hidden;
+  transition: 0.5s;
+  animation-timing-function: ease-in-out;
+  transform-origin: top;
+  background-color: rgba(9, 44, 68, 0.877);
+}
+
+.event:hover {
+  background-color: rgb(9, 44, 68);
+  height: 450px;
+
+  header {
+    border-bottom: 2px dashed white;
+    padding: 10px 0px;
+    margin-bottom: 10px;
+    transition: 0.5s;
+    animation-timing-function: ease-in-out;
+  }
+}
+
+.event header {
+  width: 100%;
+  font-family: "Rye", serif;
+  font-weight: 400;
+  text-shadow: 2px 2px 0px rgb(102, 123, 115);
+  font-style: normal;
+  font-size: 2em;
+  color: rgb(232, 224, 159);
+  text-align: center;
+  transition: 0.3s ease-in-out;
+}
+
+.event ul {
+  color: rgb(232, 224, 159);
+  width: 100%;
+  margin: 0 auto;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  text-align: center;
+  list-style: none;
+  font-size: 20px;
+}
+
+.event li {
+  pad: 10px;
+}
+
+.event-btn-div {
+  width: 80%;
+  margin: 2em auto;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.registration-btn-div {
+  width: 80%;
+  margin: 2em auto;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.events-btn {
+  width: 50%;
+  height: 50px;
+
+  background-color: rgb(223, 197, 164);
+  outline: none;
+  border: none;
+  transition: 0.3s ease-in-out;
+
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 2em;
+
+  text-decoration: none;
+  color: black;
+  text-align: center;
+}
+
+.events-btn:hover {
+  background-color: rgb(189, 163, 130);
+  border-radius: 10px;
+  box-shadow: 1px 1px 2px 1px rgba(0, 0, 0, 0.308);
+}
+
+/* schedule */
+
+.schedule {
+  width: 80%;
+  height: auto;
+  margin: 2em auto;
+  background-image: url(./assets/schedule.jpg);
+  background-size: cover;
+  padding: 20px;
+  backdrop-filter: blur(10px);
+}
+table,
+th,
+td,
+tr {
+  border: 1px solid rgb(255, 255, 255);
+  border-collapse: collapse;
+  padding: 20px;
+  text-align: center;
+  font-family: "Rye", sans-serif;
+  font-size: 1.1em;
+  color: rgb(232, 224, 159);
+}
+
+th {
+  background-color: rgba(0, 0, 0, 0.89);
+}
+
+table {
+  width: 93%;
+  margin: 0 auto;
+  background-color: rgba(0, 0, 0, 0.63);
+}
+
+table caption {
+  margin-bottom: 20px;
+  font-size: 2em;
+}
+
+.schedule-2 {
+  background-image: url(./assets/schedule-2.jpg);
+  background-size: cover;
+  backdrop-filter: blur(10px);
+}
+
+/* team */
+
+.meteora-team-heading {
+  font-family: "Rye", sans-serif;
+  font-size: 2.5em;
+  width: 80%;
+  text-align: center;
+  margin: 2em auto;
+}
+
+.team {
+  width: 80%;
+  margin: 2em auto;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+
+  gap: 20px;
+  row-gap: 100px;
+}
+
+.team-div {
+  width: 35%;
+  display: flex;
+  background-color: rgb(255, 255, 255);
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  overflow: hidden;
+
+  padding: 10px;
+  border-radius: 30px;
+  box-shadow: 1px 1px 22px 2px rgba(0, 0, 0, 0.329);
+  transition: 0.3s ease-in-out;
+}
+
+.team-div img {
+  width: 60%;
+}
+
+.name {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: larger;
+}
+
+.pos,
+.number {
+  font-family: "Quicksand", sans-serif;
+}
+
+/* sponsors */
+
+.sponsors {
+  width: 100%;
+  padding: 100px;
+  background-color: black;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.sponsors img {
+  transition: 0.3s ease-in-out;
+}
+
+.sponsors img:hover {
+  scale: 1.1;
+}
+
+/* footer */
+
+footer {
+  width: 100%;
+  height: 50vh;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+
+  background-color: rgb(0, 0, 0);
+
+  color: white;
+  border-top: 1px solid rgba(255, 255, 255, 0.212);
+  padding-bottom: 50px;
+}
+
+.logo-meteora {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  height: 90%;
+
+  gap: 20px;
+}
+
+.logo-meteora span {
+  font-family: "Poppins", sans-serif;
+  font-weight: 900;
+  font-size: xx-large;
+}
+
+.socials {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.socials img {
+  width: 30px;
+}
+
+.socials a {
+  color: white;
+  font-family: "Poppins", sans-serif;
+  transition: 0.3s ease-in-out;
+}
+.socials a:hover {
+  color: rgb(0, 174, 255);
+}
+
+.quick-links header {
+  font-family: "Poppins", sans-serif;
+  font-size: 25px;
+}
+.quick-links ul {
+  list-style-type: none;
+  margin: 20px 0;
+}
+.quick-links ul li {
+  margin: 20px 0;
+}
+.quick-links ul li a {
+  color: white;
+  font-size: large;
+  font-family: "Poppins", sans-serif;
+  text-decoration: none;
+  transition: 0.3s ease-in-out;
+}
+.quick-links ul li a:hover {
+  color: rgb(0, 195, 255);
+}
+
+.coprights {
+  background-color: black;
+  width: 100%;
+  text-align: right;
+  color: white;
+  padding-right: 20px;
+  font-family: "Poppins", sans-serif;
+}
+
+.coprights a {
+  color: rgb(0, 183, 255);
+  font-family: "Poppins", sans-serif;
+}
+
+/* media queries */
+
+@media screen and (max-width: 1700px) {
+  .metora-tagline {
+    font-size: 80px;
+  }
+
+  .metora-heading-page h1 {
+    font-size: 15rem;
+  }
+}
+
+@media screen and (max-width: 1550px) {
+  .metora-tagline {
+    font-size: 60px;
+  }
+
+  .metora-heading-page h1 {
+    font-size: 10rem;
+  }
+
+  .metora-desc-p {
+    font-size: 1.5em;
+  }
+
+  .events-section {
+    width: 80%;
+    height: 600px;
+  }
+
+  .event {
+    width: 500px;
+    margin: 0;
+  }
+
+  .sponsors img {
+    width: 20%;
+  }
+}
+
+@media screen and (max-width: 1150px) {
+  .college-logo-div {
+    width: 30%;
+  }
+  .college-logo {
+    width: 30px;
+    height: 30px;
+  }
+
+  .welcome-page,
+  .metora-desc,
+  .general-rules,
+  .events-section,
+  .schedule,
+  .meteora-team-heading {
+    width: 98%;
+  }
+
+  .metora-tagline {
+    font-size: 50px;
+  }
+
+  .general-rules header {
+    font-size: 50px;
+  }
+
+  .general-rules ol {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .general-rules ol li {
+    font-size: 22px;
+  }
+
+  .general-rules-text ol li a {
+    color: rgb(102, 33, 14);
+  }
+
+  table,
+  th,
+  td,
+  tr {
+    font-size: 1em;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  nav ul {
+    font-size: 15px;
+  }
+
+  .metora-heading-page h1 {
+    font-size: 6rem;
+  }
+
+  .welcome-page {
+    height: 50vh;
+
+    background-size: cover;
+  }
+
+  .metora-dates {
+    font-size: 20px;
+  }
+
+  .metora-tagline {
+    font-size: 40px;
+  }
+
+  .metora-desc-p {
+    font-size: 1.2em;
+  }
+
+  .general-rules header {
+    font-size: 50px;
+  }
+
+  .general-rules ol {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .general-rules ol li {
+    font-size: 20px;
+  }
+
+  .event-btn-div a,
+  .registration-btn-div a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .event-btn-div a {
+    font-size: medium;
+  }
+  table,
+  th,
+  td,
+  tr {
+    font-size: 12px;
+  }
+}
+
+.registration-btn-div a {
+  font-size: medium;
+}
+
+.sponsors img {
+  width: 30%;
+}
+
+footer {
+  height: auto;
+  flex-direction: column;
+  gap: 100px;
+  padding-top: 50px;
+}
+
+.coprights {
+  background-color: black;
+  width: 100%;
+  text-align: right;
+  color: white;
+  padding: 20px;
+  font-family: "Poppins", sans-serif;
+}
+
+.coprights a {
+  color: rgb(0, 183, 255);
+  font-family: "Poppins", sans-serif;
+}
+
+.team {
+  width: 100%;
+}
+
+.name {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: medium;
+}
+
+.pos,
+.number {
+  font-size: medium;
+  font-family: "Quicksand", sans-serif;
+}
+
+@media screen and (max-width: 660px) {
+  nav ul {
+    font-size: 12px;
+  }
+
+  .college-name {
+    font-size: 10px;
+  }
+
+  .metora-heading-page h1 {
+    font-size: 5rem;
+  }
+
+  .metora-tagline {
+    font-size: 30px;
+  }
+  .metora-dates {
+    font-size: 20px;
+  }
+
+  .metora-desc-p {
+    width: 100%;
+    font-size: 1em;
+  }
+
+  .general-rules ol li {
+    font-size: 16px;
+  }
+
+  .sponsors img {
+    width: 20%;
+  }
+
+  .team {
+    width: 100%;
+  }
+
+  .name {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-size: medium;
+  }
+
+  .pos,
+  .number {
+    font-size: medium;
+    font-family: "Quicksand", sans-serif;
+  }
+
+  .pos {
+    font-size: small;
+  }
+
+  .quick-links ul li a {
+    font-size: medium;
+  }
+
+  .coprights {
+    background-color: black;
+    width: 100%;
+    text-align: right;
+    color: white;
+    padding: 20px;
+    font-family: "Poppins", sans-serif;
+  }
+
+  .coprights a {
+    color: rgb(0, 183, 255);
+    font-family: "Poppins", sans-serif;
+  }
+
+  .schedule {
+    height: auto;
+  }
+  table,
+  th,
+  td,
+  tr {
+    padding: 10px;
+  }
+}
