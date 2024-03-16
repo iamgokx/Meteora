@@ -52,7 +52,7 @@ nav {
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
 
-  background-image: url(/assets/nav.png);
+background-color: rgba(0, 0, 0, 0.952);
 
   background-size: contain;
   background-position: center;
@@ -270,6 +270,38 @@ nav ul li a {
   color: rgb(102, 33, 14);
 }
 
+/* registration */
+
+.registration-btn-div{
+  width: 50%;
+  height: 40px;
+  margin: 100px auto;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  
+}
+
+.registgration-btn{
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
+  font-size: 2em;
+  font-weight: 600;
+  color: black;
+  background-color: rgb(232, 224, 159);
+  padding: 10px;
+  box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.521);
+  transition: 0.3s ease-in-out;
+  border-radius: 10px;
+
+}
+
+.registgration-btn:hover{
+scale: 0.9;
+}
+
 /* events section */
 
 .events-section {
@@ -350,14 +382,7 @@ nav ul li a {
   align-items: center;
 }
 
-.registration-btn-div {
-  width: 80%;
-  margin: 2em auto;
 
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
 
 .events-btn {
   width: 50%;
@@ -721,8 +746,7 @@ footer {
     font-size: 20px;
   }
 
-  .event-btn-div a,
-  .registration-btn-div a {
+  .event-btn-div a{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -731,6 +755,15 @@ footer {
   .event-btn-div a {
     font-size: medium;
   }
+
+  
+.registgration-btn{
+  font-size: medium;
+
+  border-radius: 5px;
+
+}
+
   table,
   th,
   td,
@@ -739,9 +772,7 @@ footer {
   }
 }
 
-.registration-btn-div a {
-  font-size: medium;
-}
+
 
 .sponsors img {
   width: 30%;
