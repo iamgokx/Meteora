@@ -4,7 +4,7 @@
   padding: 0;
 }
 
-body{
+body {
   background-image: linear-gradient(
     to right top,
     #85e5ee,
@@ -15,7 +15,7 @@ body{
   );
 
   overflow-x: hidden;
-  overflow-Y: scroll;
+  overflow-y: scroll;
 }
 
 body::-webkit-scrollbar {
@@ -233,28 +233,36 @@ footer {
   }
 }
 @media screen and (max-width: 900px) {
+  .reg-form {
+    width: 100%;
+    margin-top: 0px;
+    border-radius: 0px;
+  }
+  
+  footer {
+    margin-top: 0px;
+  }
 
-  h1{
+  h1 {
     font-size: large;
   }
   form ul {
     flex-direction: column;
 
-    
     li {
       width: 90%;
       font-size: medium;
     }
   }
 
-  form ul li input{
+  form ul li input {
     font-size: medium;
   }
-  form ul li select{
+  form ul li select {
     font-size: medium;
   }
 
-  footer{
+  footer {
     flex-direction: column;
   }
 }
