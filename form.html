@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="./assets/favicon.png" type="image/x-icon">
+  <link rel="stylesheet" href="formStyles.css">
+  <title>Meteora Registration Form</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rye&display=swap" rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+
+
+</head>
+
+<body>
+
+  <section class="reg-form">
+    <div class="college-name-heading">
+      <img src="./assets/logo.png" alt="logo">
+
+    </div>
+    <h1>METEORA REGISTRATION FORM</h1>
+    <form action="thank.html" method="get" autocomplete="">
+      <ul>
+        <li>
+          <label for="college-name">College Name</label>
+          <input type="text" id="college-name" name="college-name" required placeholder="Don Bosco College">
+        </li>
+
+        <li>
+          <label for="team-name">Team Name</label>
+          <input type="text" id="team-name" name="team-name" required placeholder="Team x-park">
+        </li>
+
+        <li>
+          <label for="stu-cor">Student Cordinatior</label>
+          <input type="text" id="stu-cor" name="student-cordinatior" placeholder="eg. James Carvalho" required>
+        </li>
+
+        <li>
+          <label for="c-gender">Gender</label>
+          <select name="c-gender" id="c-gender" required>
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+            <option value="Female">Others</option>
+          </select>
+        </li>
+
+        <li>
+          <label for="cor-ph">Cordinator Phone Number</label>
+          <input type="tel" id="cor-ph" name="cordinatior-phone-number" placeholder="989652146" required>
+        </li>
+        <li>
+          <label for="cor-email">Cordinator Email </label>
+          <input type="email" id="cor-email" name="cordinatior-email" placeholder="eg@gmail.com" required>
+        </li>
+
+        <li>
+          <label for="members-no">Number Of Members (10-30)</label>
+          <input type="number" name="members-no" id="members-no" max="30" min="10" required>
+        </li>
+
+        <li>
+          <label for="faculty-name">Faculty Name (optional)</label>
+          <input type="text" id="faculty-name">
+        </li>
+
+        <li>
+          <label for="team-members">Team Members Names (Full Names)</label>
+          <textarea name="" id="" cols="10" rows="1" minlength="50"></textarea>
+        </li>
+        <li class="btn-li">
+          <button type="submit">Submit</button>
+        </li>
+      </ul>
+
+    </form>
+  </section>
+
+  <footer id="contacts">
+
+    <div class="logo-meteora">
+      <a href="https://donboscogoa.ac.in/">
+
+        <img src="./assets/logo.png" alt="logo">
+      </a>
+      <span>METEORA 2023</span>
+    </div>
+
+    <div class="socials">
+      <img src="./assets/instagram.jpg" alt="">
+      <a href="https://www.instagram.com/meteora.dbc?igsh=MTNybXh5bnFhMmZmMA%3D%3D">@meteora.dbc</a>
+    </div>
+
+
+
+  </footer>
+  <p class="coprights">© <a href="https://www.instagram.com/go.kullllll" target="_blank">@Gokul</a> 2024</p>
+</body>
+
+</html>

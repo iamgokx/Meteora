@@ -1,0 +1,260 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  background-image: linear-gradient(
+    to right top,
+    #85e5ee,
+    #aceaff,
+    #d2eeff,
+    #eff5ff,
+    #ffffff
+  );
+
+  overflow-x: hidden;
+  overflow-Y: scroll;
+}
+
+body::-webkit-scrollbar {
+  width: 10px;
+}
+body::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: rgb(0, 183, 255);
+  border-radius: 6px;
+}
+
+/* form */
+
+.reg-form {
+  width: 60%;
+  margin: 0 auto;
+  margin-top: 100px;
+  background-color: rgba(0, 174, 255, 0.281);
+  background-color: rgb(255, 255, 255);
+  overflow: hidden;
+  border-radius: 20px;
+}
+
+.college-name-heading {
+  background-color: rgb(21, 5, 56);
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0px;
+}
+
+.college-name-heading img {
+  width: 150px;
+}
+
+h1 {
+  width: 100%;
+  text-align: center;
+  padding: 20px 0px;
+  font-family: "Rye", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 30px;
+  color: rgb(232, 224, 159);
+  text-shadow: 1px 1px 5px black;
+  background-color: rgb(21, 5, 56);
+}
+
+.general-rules header {
+  width: 100%;
+  text-align: center;
+  font-family: "Rye", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 70px;
+  color: rgb(232, 224, 159);
+  text-shadow: 1px 1px 5px black;
+}
+
+form {
+  width: 98%;
+  margin: 100px auto;
+}
+
+form ul {
+  width: 98%;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: row;
+  gap: 20px;
+}
+
+form ul li {
+  width: 45%;
+  height: 100px;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: large;
+
+  input,
+  select,
+  textarea {
+    width: 100%;
+    height: 80%;
+    border-radius: 10px;
+    border: none;
+
+    text-indent: 10px;
+    font-family: "Poppins", sans-serif;
+    font-size: large;
+
+    background-color: rgba(0, 174, 255, 0.137);
+  }
+}
+
+input:focus {
+  outline: 2px solid rgba(89, 194, 236, 0.747);
+}
+textarea:focus {
+  outline: 2px solid rgba(89, 194, 236, 0.747);
+}
+select:focus {
+  outline: 2px solid rgba(89, 194, 236, 0.747);
+}
+
+.btn-li {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+button {
+  width: 150px;
+  height: 50px;
+  border: none;
+  color: white;
+  border-radius: 50px;
+  font-family: "Poppins", sans-serif;
+  font-size: large;
+  font-weight: 600;
+  background-color: rgb(21, 5, 56);
+  transition: 0.2s ease-in-out;
+}
+
+button:hover {
+  background-color: rgb(46, 19, 104);
+  letter-spacing: 1px;
+}
+
+/* footer */
+
+footer {
+  width: 100%;
+  height: 50vh;
+  margin-top: 100px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+
+  background-color: rgb(0, 0, 0);
+
+  color: white;
+  border-top: 1px solid rgba(255, 255, 255, 0.212);
+  padding-bottom: 50px;
+}
+
+.logo-meteora {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  height: 90%;
+
+  gap: 20px;
+}
+
+.logo-meteora span {
+  font-family: "Poppins", sans-serif;
+  font-weight: 900;
+  font-size: xx-large;
+}
+
+.socials {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.socials img {
+  width: 30px;
+}
+
+.socials a {
+  color: white;
+  font-family: "Poppins", sans-serif;
+  transition: 0.3s ease-in-out;
+}
+.socials a:hover {
+  color: rgb(0, 174, 255);
+}
+
+.coprights {
+  background-color: black;
+  width: 100%;
+  text-align: right;
+  color: white;
+  padding-right: 20px;
+  font-family: "Poppins", sans-serif;
+}
+
+.coprights a {
+  color: rgb(0, 183, 255);
+  font-family: "Poppins", sans-serif;
+}
+
+@media screen and (max-width: 1400px) {
+  .reg-form {
+    width: 95%;
+  }
+}
+@media screen and (max-width: 900px) {
+
+  h1{
+    font-size: large;
+  }
+  form ul {
+    flex-direction: column;
+
+    
+    li {
+      width: 90%;
+      font-size: medium;
+    }
+  }
+
+  form ul li input{
+    font-size: medium;
+  }
+  form ul li select{
+    font-size: medium;
+  }
+
+  footer{
+    flex-direction: column;
+  }
+}
