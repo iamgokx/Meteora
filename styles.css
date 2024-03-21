@@ -930,4 +930,9 @@ footer {
   tr {
     padding: 10px;
   }
+
+  footer .quick-links{
+    margin-left: 20px;
+    align-self: start;
+  }
 }
