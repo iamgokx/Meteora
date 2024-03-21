@@ -921,6 +921,16 @@ footer {
     font-family: "Poppins", sans-serif;
   }
 
+  .sponsors{
+ 
+    gap: 10px;
+    padding: 10px;
+  }
+
+  .sponsors img {
+    width: 40%;
+  }
+
   .schedule {
     height: auto;
   }
