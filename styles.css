@@ -118,6 +118,11 @@ nav ul li a {
   display: flex;
   justify-content: center;
   align-items: center;
+  background-image: url(./assets/welcome.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-bottom: 2rem;
 }
 
 .metora-heading-page h1 {
@@ -134,7 +139,6 @@ nav ul li a {
 
   background-image: url("https://media.giphy.com/media/FOQhwCWXP7UBi/giphy.gif");
 
-  /* background-image: url(./assets/insect.jpg); */
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -143,6 +147,8 @@ nav ul li a {
 
   font-family: "Poppins", sans-serif;
   font-weight: 900;
+
+  -webkit-text-stroke: 2px white;
 }
 
 /* welcome page */
@@ -160,21 +166,6 @@ nav ul li a {
   justify-content: end;
   align-items: center;
   flex-direction: column;
-  /* animation: fade-Animation linear;
-  animation-timeline: view(-100px);
-  animation-range-start: contain;
-  animation-range-end: contain; */
-}
-
-@keyframes fade-Animation {
-  from {
-    scale: 0.7;
-    opactiy: 0;
-  }
-  to {
-    scale: 1;
-    opacity: 1;
-  }
 }
 
 .metora-tagline {
@@ -547,10 +538,11 @@ table caption {
 
 footer {
   width: 100%;
-  height: 50vh;
-
+  height: auto;
+padding-top: 50px;
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   justify-content: space-evenly;
   align-items: center;
 
@@ -559,6 +551,7 @@ footer {
   color: white;
   border-top: 1px solid rgba(255, 255, 255, 0.212);
   padding-bottom: 50px;
+  overflow: hidden;
 }
 
 .logo-meteora {
@@ -633,6 +626,26 @@ footer {
 .coprights a {
   color: rgb(0, 183, 255);
   font-family: "Poppins", sans-serif;
+}
+
+.map {
+  width: 95%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.map a {
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
+  color: white;
+  transition: 0.3s ease-in-out;
+}
+
+.map a:hover {
+  color: rgb(0, 183, 255);
 }
 
 /* media queries */
@@ -732,6 +745,13 @@ footer {
 @media screen and (max-width: 900px) {
   nav ul {
     font-size: 15px;
+  }
+
+  .metora-heading-page {
+    background-image: url(./assets/collage.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
   }
 
   .metora-heading-page h1 {
@@ -938,5 +958,9 @@ footer {
   footer .quick-links {
     margin-left: 20px;
     align-self: start;
+  }
+
+  .map {
+    width: 90%;
   }
 }
