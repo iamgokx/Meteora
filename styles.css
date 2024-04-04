@@ -265,8 +265,7 @@ nav ul li a {
 /* registration */
 
 .registration-btn-div {
-  width: 50%;
-  height: 40px;
+  width: 80%;
   margin: 100px auto;
 
   display: flex;
@@ -275,6 +274,8 @@ nav ul li a {
 }
 
 .registgration-btn {
+  width: 50%;
+  text-align: center;
   text-decoration: none;
   font-family: "Poppins", sans-serif;
   font-size: 2em;
@@ -284,7 +285,7 @@ nav ul li a {
   padding: 10px;
   box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.521);
   transition: 0.3s ease-in-out;
-  border-radius: 10px;
+  border-radius: 6px;
 }
 
 .registgration-btn:hover {
@@ -332,6 +333,10 @@ nav ul li a {
     transition: 0.5s;
     animation-timing-function: ease-in-out;
   }
+
+  ul{
+    display: block;
+  }
 }
 
 .event header {
@@ -356,6 +361,7 @@ nav ul li a {
   text-align: center;
   list-style: none;
   font-size: 20px;
+  display: none;
 }
 
 .event li {
@@ -375,7 +381,7 @@ nav ul li a {
   width: 50%;
   height: 50px;
 
-  background-color: rgb(223, 197, 164);
+  background-color: rgb(232, 224, 159);
   outline: none;
   border: none;
   transition: 0.3s ease-in-out;
@@ -437,6 +443,14 @@ table caption {
   background-image: url(./assets/schedule-2.jpg);
   background-size: cover;
   backdrop-filter: blur(10px);
+}
+
+tr:hover {
+  background-color: rgba(232, 224, 159, 0.719);
+
+  td {
+    color: black;
+  }
 }
 
 /* team */
@@ -524,14 +538,16 @@ table caption {
   align-items: center;
   flex-wrap: wrap;
   gap: 20px;
+  row-gap: 20px;
 }
 
 .sponsors img {
+  width: 25%;
   transition: 0.3s ease-in-out;
 }
 
 .sponsors img:hover {
-  scale: 1.1;
+  scale: 0.9;
 }
 
 /* footer */
@@ -539,7 +555,7 @@ table caption {
 footer {
   width: 100%;
   height: auto;
-padding-top: 50px;
+  padding-top: 50px;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -550,6 +566,7 @@ padding-top: 50px;
 
   color: white;
   border-top: 1px solid rgba(255, 255, 255, 0.212);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.212);
   padding-bottom: 50px;
   overflow: hidden;
 }
@@ -581,6 +598,7 @@ padding-top: 50px;
 
 .socials img {
   width: 30px;
+
 }
 
 .socials a {
@@ -811,10 +829,6 @@ padding-top: 50px;
   tr {
     font-size: 12px;
   }
-}
-
-.sponsors img {
-  width: 30%;
 }
 
 .coprights {
