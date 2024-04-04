@@ -205,7 +205,7 @@ nav ul li a {
 
 .metora-desc {
   width: 80%;
-  height: 50vh;
+  /* height: 50vh; */
   margin: 2em auto;
   display: flex;
   justify-content: center;
@@ -242,7 +242,7 @@ nav ul li a {
   font-style: normal;
   font-size: 70px;
   color: rgb(232, 224, 159);
-  text-shadow: 1px 1px 5px black;
+  text-shadow: 1px 1px 9px black;
 }
 
 .general-rules ol {
