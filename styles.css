@@ -43,8 +43,7 @@ nav {
   flex-direction: row;
   overflow: hidden;
   z-index: 3;
-  box-shadow: 2px 2px 54px 4px black;
-
+  
   font-family: "Quicksand", sans-serif;
   font-optical-sizing: auto;
   font-weight: 400;
@@ -52,10 +51,14 @@ nav {
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
 
-  background-color: rgba(0, 0, 0, 0.952);
-
   background-size: contain;
   background-position: center;
+
+
+  background: rgba(6, 0, 8, 0.911);
+  box-shadow: 2px 2px 54px 4px black;
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(11px);
 }
 
 .college-logo-div {
@@ -182,12 +185,15 @@ nav ul li a {
 @keyframes taglineAnimation {
   0% {
     transform: translateY(0px);
+    scale: 1;
   }
   50% {
     transform: translateY(5px);
+    scale: 0.95;
   }
   100% {
     transform: translateY(0px);
+    scale: 1;
   }
 }
 
@@ -212,7 +218,8 @@ nav ul li a {
   align-items: center;
   background-color: rgb(9, 44, 68);
   overflow: hidden;
-  padding: 10px;
+  padding: 20px;
+  
 }
 
 .metora-desc-p {
@@ -231,7 +238,9 @@ nav ul li a {
 .general-rules {
   width: 80%;
   margin: 2em auto;
+  padding:10px;
   align-items: center;
+  background-color: rgba(255, 239, 196, 0.479);
 }
 
 .general-rules header {
@@ -247,6 +256,7 @@ nav ul li a {
 
 .general-rules ol {
   width: 100%;
+  margin-left: 35px;
 }
 
 .general-rules ol li {
